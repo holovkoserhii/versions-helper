@@ -3,7 +3,8 @@
     "browser": true,
     "es6": true,
     "node": true,
-    "es2020": true
+    "es2020": true,
+    "jest": true
   },
   "extends": [
     "plugin:@typescript-eslint/recommended",
@@ -24,7 +25,7 @@
     "sourceType": "module",
     "project": "./tsconfig.json"
   },
-  "plugins": ["@typescript-eslint", "unused-imports"],
+  "plugins": ["@typescript-eslint", "unused-imports", "jest"],
   "rules": {
     "prettier/prettier": [
       "error",
@@ -85,6 +86,17 @@
     "@typescript-eslint/ban-ts-comment": "off"
 
   },
+  "overrides": [
+    {
+      "files": [
+        "**/*.spec.js",
+        "**/*.spec.jsx"
+      ],
+      "env": {
+        "jest": true
+      }
+    }
+  ],
   "settings": {
     "import/resolver": {
       "node": {
