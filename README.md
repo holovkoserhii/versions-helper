@@ -3,7 +3,7 @@ This tool helps bump package version in package.json file of the target repo. It
 Features:
 - basic sanity checks
 - both dependencies and devDependencies sections checks
-- use can update versions with semver prefixes (^, ~). The system will automatically update version of the target package exactly the way the user specifies it (with or without prefixes)
+- user can update versions with semver prefixes (^, ~). The system will automatically update version of the target package exactly the way the user specifies it (with or without prefixes)
 - works only with bitbucket
 
 Steps to use:
